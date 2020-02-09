@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SSKJ.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>5A933B898AE72E3A35C3FC2A460E9C4B4911F10E</string>
+				<key>dateExpires</key>
+				<string>2020/5/30</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>3A8D29N838.com.ABSuperShop.soft</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>3A8D29N838</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>3A8D29N838.com.ABSuperShop.soft</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>SSKJ.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>f96c484b-5b3e-460f-9d32-e8069c2ffe90</string>
+				<key>name</key>
+				<string>rrrrrrrrr</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>3A8D29N838</string>
+				<key>name</key>
+				<string>Caspar Bruce</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

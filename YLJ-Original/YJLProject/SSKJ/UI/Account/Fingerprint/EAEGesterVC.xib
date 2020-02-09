@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EAEGesterVC">
+            <connections>
+                <outlet property="_zhiwenBtn" destination="umg-8K-cfg" id="LIu-Ls-m5W"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gestureBack" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-4E-8H5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="6Yc-a7-LAm">
+                    <rect key="frame" x="141" y="100" width="93" height="85"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwu-D9-q7J">
+                    <rect key="frame" x="148" y="215" width="79" height="28"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWV-yy-Ryc">
+                    <rect key="frame" x="132" y="583" width="111" height="34"/>
+                    <state key="normal" title="使用密码解锁">
+                        <color key="titleColor" red="0.25098039220000001" green="0.59999999999999998" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="handlePawOpen:" destination="-1" eventType="touchUpInside" id="Vyz-Pc-3x6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umg-8K-cfg">
+                    <rect key="frame" x="97.5" y="262" width="180" height="180"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="Q05-Bv-so1"/>
+                        <constraint firstAttribute="width" constant="180" id="T7C-z6-dPA"/>
+                    </constraints>
+                    <state key="normal" image="EAE_zhiwen"/>
+                    <connections>
+                        <action selector="zhiwenBtnClick:" destination="-1" eventType="touchUpInside" id="rWX-aj-RmP"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击使用指纹解锁" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qg-tO-BqH">
+                    <rect key="frame" x="127.5" y="407" width="120" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="OLY-pH-0r0"/>
+                        <constraint firstAttribute="height" constant="21" id="caO-v3-ZG2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6Yc-a7-LAm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="AQu-GP-4uH"/>
+                <constraint firstItem="umg-8K-cfg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="E8y-3n-jsS"/>
+                <constraint firstItem="fwu-D9-q7J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jwp-ZA-L0D"/>
+                <constraint firstItem="l1L-4E-8H5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="MUj-WM-HyK"/>
+                <constraint firstItem="umg-8K-cfg" firstAttribute="top" secondItem="fwu-D9-q7J" secondAttribute="bottom" constant="19" id="Zdi-MH-BR4"/>
+                <constraint firstItem="gWV-yy-Ryc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="diL-Ys-8aJ"/>
+                <constraint firstItem="fwu-D9-q7J" firstAttribute="top" secondItem="6Yc-a7-LAm" secondAttribute="bottom" constant="30" id="h2L-1Y-Suy"/>
+                <constraint firstItem="l1L-4E-8H5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hsM-IC-cxh"/>
+                <constraint firstAttribute="bottom" secondItem="l1L-4E-8H5" secondAttribute="bottom" id="oaX-Na-jvu"/>
+                <constraint firstItem="6qg-tO-BqH" firstAttribute="top" secondItem="fwu-D9-q7J" secondAttribute="bottom" constant="164" id="qbW-FM-nRH"/>
+                <constraint firstAttribute="trailing" secondItem="l1L-4E-8H5" secondAttribute="trailing" id="xT9-xu-jpu"/>
+                <constraint firstItem="6qg-tO-BqH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yOy-5K-g3L"/>
+                <constraint firstItem="6Yc-a7-LAm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yYf-1z-hiR"/>
+                <constraint firstAttribute="bottom" secondItem="gWV-yy-Ryc" secondAttribute="bottom" constant="50" id="zVG-wr-Utf"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="82.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EAE_zhiwen" width="75" height="84"/>
+        <image name="gestureBack" width="375" height="667"/>
+        <image name="logo" width="93" height="85"/>
+    </resources>
+</document>

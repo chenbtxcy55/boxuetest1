@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BecameShopAlertVcViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-hL-SEB">
+                    <rect key="frame" x="0.0" y="696" width="414" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成为商家才能进行出售哦~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETq-36-jpW">
+                            <rect key="frame" x="0.0" y="50" width="414" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.69803921568627447" green="0.72549019607843135" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eB8-f5-CdW">
+                            <rect key="frame" x="25" y="135" width="364" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="dst-u0-oCR"/>
+                            </constraints>
+                            <state key="normal" title="去成为商家" backgroundImage="btn_normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.11372549019607843" green="0.12941176470588234" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ETq-36-jpW" firstAttribute="leading" secondItem="rmj-hL-SEB" secondAttribute="leading" id="8sq-pS-5dA"/>
+                        <constraint firstAttribute="bottom" secondItem="eB8-f5-CdW" secondAttribute="bottom" constant="20" id="A4r-kR-Nxe"/>
+                        <constraint firstItem="eB8-f5-CdW" firstAttribute="width" secondItem="rmj-hL-SEB" secondAttribute="width" constant="-50" id="NCv-Xi-lG7"/>
+                        <constraint firstItem="ETq-36-jpW" firstAttribute="top" secondItem="rmj-hL-SEB" secondAttribute="top" constant="50" id="Qf7-oe-VHk"/>
+                        <constraint firstItem="eB8-f5-CdW" firstAttribute="centerX" secondItem="rmj-hL-SEB" secondAttribute="centerX" id="hZu-Gq-IkU"/>
+                        <constraint firstAttribute="height" constant="200" id="jtY-w5-UXs"/>
+                        <constraint firstAttribute="trailing" secondItem="ETq-36-jpW" secondAttribute="trailing" id="vGw-Hw-qSb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rmj-hL-SEB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AhX-r7-9lT"/>
+                <constraint firstItem="rmj-hL-SEB" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="CnZ-T7-jvf"/>
+                <constraint firstAttribute="trailing" secondItem="rmj-hL-SEB" secondAttribute="trailing" id="mEh-Fp-gGM"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_normal" width="325" height="45"/>
+    </resources>
+</document>
